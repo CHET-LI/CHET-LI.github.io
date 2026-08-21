@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ .Site.Title }}</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 800px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    header { border-bottom: 1px solid #eee; padding-bottom: 1rem; margin-bottom: 2rem; }
+    nav a { margin-right: 1rem; }
+    .post-list li { margin: 1rem 0; }
+    footer { border-top: 1px solid #eee; padding-top: 1rem; margin-top: 3rem; color: #666; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>{{ .Site.Title }}</h1>
+    <nav>
+      {{ range .Site.Menus.main }}
+        <a href="{{ .URL }}">{{ .Name }}</a>
+      {{ end }}
+    </nav>
+  </header>
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
+  <footer>
+    <p>&copy; {{ now.Year }} {{ .Site.Title }} | Powered by Hugo + PaperMod</p>
+  </footer>
+</body>
+</html>
