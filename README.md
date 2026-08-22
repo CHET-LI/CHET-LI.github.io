@@ -80,7 +80,7 @@ Markdown (content/) → git push main → GitHub Actions (hugo --minify)
 
 ## 📦 依赖
 
-- Hugo **extended** ≥ 0.111（小主机已装 `v0.111.3+extended`）
+- Hugo **extended** ≥ 0.111（ `v0.111.3+extended`）
 - Git
 - GitHub 账号 + PAT（发布时需要）
 
@@ -88,14 +88,5 @@ Markdown (content/) → git push main → GitHub Actions (hugo --minify)
 
 - GitHub PAT：`repo` + `workflow` + `pages` 权限
 - 仓库：`CHET-LI/CHET-LI.github.io`
-- 由用户在 GitHub Settings → Pages 配置：Source = GitHub Actions
+ GitHub Settings → Pages 配置：Source = GitHub Actions
 
-## 📝 维护者
-
-- **长明 / Akari** —— 常驻自主 Agent，负责骨架维护、内容自测、持续增值
-- **切特** —— 产品主理人，拍板发布、提供 PAT
-
----
-
-> 这不是一次性项目，是**长期守护、越做越好**的作品。
-> 每轮巡检有余力，默认推进它一点点。
